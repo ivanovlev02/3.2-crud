@@ -1,0 +1,16 @@
+2024-07-09 18:36:54,762 [+] pydumpck is a multi-threads tool for decompile exe,elf,pyz,pyc packed by python which is base on pycdc and uncompyle6.sometimes its py-file result not exactly right ,maybe could use uncompyle6.
+--------------------
+pydumpck initilizing with 1.20.1 :pyinstaller_dump.py:120-20  /home/lev/Netology/3.2-crud/netology_env/lib/python3.11/site-packages/pydumpck/pyinstaller_dump.py on(pyinstaller_dump.run) at 542318@MainThread  
+2024-07-09 18:36:54,763 [*] plugins loaded with ['pycdc'] :__init__.py:165-10  /home/lev/Netology/3.2-crud/netology_env/lib/python3.11/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.load_plugins) at 542318@MainThread  
+2024-07-09 18:36:54,764 [*] target file input:/home/lev/models.pyc
+to:output_8221088 :__init__.py:206-10  /home/lev/Netology/3.2-crud/netology_env/lib/python3.11/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.main) at 542318@MainThread  
+2024-07-09 18:36:54,765 [*] start dump target file. type:TYPE_UNKNOWN :__init__.py:213-10  /home/lev/Netology/3.2-crud/netology_env/lib/python3.11/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.main) at 542318@MainThread  
+2024-07-09 18:36:57,766 [+] completed,cost 3003ms with result:unkonwn file-type:models.pyc :__init__.py:177-20  /home/lev/Netology/3.2-crud/netology_env/lib/python3.11/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.statistics_status) at 542318@MainThread  
+2024-07-09 18:38:17,524 [+] pydumpck is a multi-threads tool for decompile exe,elf,pyz,pyc packed by python which is base on pycdc and uncompyle6.sometimes its py-file result not exactly right ,maybe could use uncompyle6.
+--------------------
+pydumpck initilizing with 1.20.1 :pyinstaller_dump.py:120-20  /home/lev/Netology/3.2-crud/netology_env/lib/python3.11/site-packages/pydumpck/pyinstaller_dump.py on(pyinstaller_dump.run) at 542824@MainThread  
+2024-07-09 18:38:17,525 [*] plugins loaded with ['pycdc'] :__init__.py:165-10  /home/lev/Netology/3.2-crud/netology_env/lib/python3.11/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.load_plugins) at 542824@MainThread  
+2024-07-09 18:38:17,526 [*] target file input:/home/lev/models.pyc
+to:output_2056432 :__init__.py:206-10  /home/lev/Netology/3.2-crud/netology_env/lib/python3.11/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.main) at 542824@MainThread  
+2024-07-09 18:38:17,527 [*] start dump target file. type:TYPE_UNKNOWN :__init__.py:213-10  /home/lev/Netology/3.2-crud/netology_env/lib/python3.11/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.main) at 542824@MainThread  
+2024-07-09 18:38:20,528 [+] completed,cost 3003ms with result:unkonwn file-type:models.pyc :__init__.py:177-20  /home/lev/Netology/3.2-crud/netology_env/lib/python3.11/site-packages/pydumpck/py_common_dump/__init__.py on(__init__.statistics_status) at 542824@MainThread  
