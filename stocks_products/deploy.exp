@@ -2,6 +2,4 @@
 spawn /home/lev/Netology/stocks_products/deploy.sh
 expect "passphrase"
 send -- "hci\r"
-expect "password"
-send -- "FD4sx5Easd16qazwsx924\r"
 expect eof
