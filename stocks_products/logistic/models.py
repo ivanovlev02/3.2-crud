@@ -9,7 +9,6 @@ class Product(models.Model):
         verbose_name_plural = 'Продукты'
         ordering = ['title']
 
-    
     title = models.CharField(max_length=60, unique=True,
                              verbose_name="Наименование")
     description = models.TextField(null=True, blank=True,
@@ -23,7 +22,6 @@ class Stock(models.Model):
         verbose_name_plural = 'Склады'
         ordering = ['address']
 
-    
     address = models.CharField(max_length=200, unique=True,
                                verbose_name="Адрес")
     products = models.ManyToManyField(
@@ -41,7 +39,6 @@ class StockProduct(models.Model):
         verbose_name_plural = 'Остатки'
         ordering = ['title']
 
-    
     stock = models.ForeignKey(
         Stock,
         on_delete=models.CASCADE,
