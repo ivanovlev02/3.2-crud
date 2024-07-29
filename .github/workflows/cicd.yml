@@ -3,7 +3,7 @@ name: Автоматизация сборки
 on:
     push:
         branches:
-            - master
+            - main
 
 jobs:
     tests:
