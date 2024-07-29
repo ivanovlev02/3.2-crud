@@ -1,0 +1,5 @@
+#!/bin/bash/expect
+spawn /home/lev/Netology/stocks_products/deploy.sh
+expect "passphrase"
+send -- "hci\r"
+expect eof
