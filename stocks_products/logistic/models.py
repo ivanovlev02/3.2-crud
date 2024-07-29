@@ -3,12 +3,15 @@ from django.db import models
 
 
 class Product(models.Model):
-    title = models.CharField(max_length=60, unique=True, verbose_name="Наименование")
-    description = models.TextField(null=True, blank=True, verbose_name="Описание")
+    title = models.CharField(max_length=60, unique=True,
+                             verbose_name="Наименование")
+    description = models.TextField(null=True, blank=True,
+                                   verbose_name="Описание")
 
 
 class Stock(models.Model):
-    address = models.CharField(max_length=200, unique=True, verbose_name="Адрес")
+    address = models.CharField(max_length=200, unique=True,
+                               verbose_name="Адрес")
     products = models.ManyToManyField(
         Product,
         through='StockProduct',
@@ -30,7 +33,8 @@ class StockProduct(models.Model):
         related_name='positions',
         verbose_name="Продукт",
     )
-    quantity = models.PositiveIntegerField(default=1, verbose_name="Количество")
+    quantity = models.PositiveIntegerField(default=1,
+                                           verbose_name="Количество")
     price = models.DecimalField(
         max_digits=18,
         decimal_places=2,
