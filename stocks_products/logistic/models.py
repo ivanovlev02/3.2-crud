@@ -5,7 +5,7 @@ from django.db import models
 class Product(models.Model):
 
     class Meta:
-        verbose_name = 'Продукт'
+        verbose_name = 'продукт'
         verbose_name_plural = 'Продукты'
         ordering = ['title']
 
@@ -18,7 +18,7 @@ class Product(models.Model):
 class Stock(models.Model):
 
     class Meta:
-        verbose_name = 'Склад'
+        verbose_name = 'склад'
         verbose_name_plural = 'Склады'
         ordering = ['address']
 
@@ -35,7 +35,7 @@ class Stock(models.Model):
 class StockProduct(models.Model):
 
     class Meta:
-        verbose_name = 'Прайс'
+        verbose_name = 'склад'
         verbose_name_plural = 'Остатки'
         ordering = ['stock']
 
