@@ -37,7 +37,7 @@ class StockProduct(models.Model):
     class Meta:
         verbose_name = 'Прайс'
         verbose_name_plural = 'Остатки'
-        ordering = ['title']
+        ordering = ['stock']
 
     stock = models.ForeignKey(
         Stock,
