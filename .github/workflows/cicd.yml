@@ -63,11 +63,3 @@ jobs:
                 username: ${{ secrets.SSH_USER }}
                 password: ${{ secrets.SSH_PASSWORD }}
                 script: expect /home/lev/Netology/stocks_products/deploy.exp
-            - name: Перезапуск Gunicorn
-              uses: appleboy/ssh-action@master
-              with:
-                host: ${{ secrets.SSH_HOST }}
-                port: ${{ secrets.SSH_PORT }}
-                username: ${{ secrets.SSH_USER }}
-                password: ${{ secrets.SSH_PASSWORD }}
-                script: sudo systemctl restart gunicorn
