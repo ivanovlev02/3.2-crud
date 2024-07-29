@@ -9,16 +9,17 @@ jobs:
     tests:
         runs-on: ubuntu-20.04
         env:
-            ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
-            SECRET_KEY: ${{ secrets.SECRET_KEY }}
+            HOSTS: ${{ secrets.ALLOWED_HOSTS }}
+            SECRET: ${{ secrets.SECRET_KEY }}
             DEBUG: ${{ secrets.DEBUG }}
+            DB_ENGINE: ${{ secrets.DB_ENGINE }}
             DB_NAME: ${{ secrets.DB_NAME }}
             DB_USER: ${{ secrets.DB_USER }}
             DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
             DB_HOST: ${{ secrets.DB_HOST }}
             DB_PORT: ${{ secrets.DB_PORT }}
         services:
-            pstgres_main:
+            postgres_main:
                 image: postgres:16
                 env:
                     POSTGRES_DB: ${{ env.DB_NAME }}
@@ -35,7 +36,7 @@ jobs:
             - name: Проверяем репозиторий на наличие изменений
               uses: actions/checkout@v4
             - name: Установка Python
-              uses: actions/setup-puthon@v5
+              uses: actions/setup-python@v5
               with:
                 python-version: "3.11"
             - name: Установка зависимостей
