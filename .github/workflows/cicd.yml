@@ -56,7 +56,7 @@ jobs:
                 DB_HOST: ${{ env.DB_HOST }}
                 DB_PORT: ${{ env.DB_PORT }}
             - name: Деплой проекта
-              uses: appleboy/ssh-action@main
+              uses: appleboy/ssh-action@master
               with:
                 host: ${{ secrets.SSH_HOST }}
                 username: ${{ secrets.SSH_USER }}
