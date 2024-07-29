@@ -1,7 +1,12 @@
 from django.contrib import admin
-from .models import StockProduct, Product
+from .models import StockProduct, Product, Stock
 
 # Register your models here.
+
+
+class StockAdmin(admin.ModelAdmin):
+    list_display = ('address', 'products')
+    list_filter = ('address',)
 
 
 class StockProductAdmin(admin.ModelAdmin):
@@ -16,3 +21,4 @@ class ProductAdmin(admin.ModelAdmin):
 
 admin.site.register(StockProduct, StockProductAdmin)
 admin.site.register(Product, ProductAdmin)
+admin.site.register(Stock, StockAdmin)
